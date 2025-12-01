@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+                .navbar-nav .nav-link.active {
+                color:#fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 60vh;
+            background-color: #616161;
+            padding-top: 60px;
+            z-index: 0;
+        }
+
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #6f7587;
+            z-index: 20;
+        }
+
+@media screen and (max-width: 920px) {
+        section {
+            padding-top: 90px;
+            height: 182vh;
+        }
+
+        .col-lg-4 {
+                padding-bottom: 22px;
+        }
+    }
+
+    </style>
+</head>
+
+
+<body>
+<!-- começo do cabeçalho -->
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+<div class="container">
+                <h1 class="bs-h1">Milkian Mods</h1>
+                <button class="navbar-toggler text-bg-primary" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Mais recentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mods-jogo">Mods por jogo</a>
+                    </li class="nav-item">
+                </ul>
+            </nav>
+
+</div>
+        </div>
+
+    </header>
+
+    <!-- fim do cabeçalho -->
+    <!-- começo do carrousel-->
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./images/slide1.png">
+                            <div class="carousel-caption" ><h2>Os melhores mods</h2></div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./images/slide2.png">
+                            <div class="carousel-caption" ><h2>Clássicos para seu jogo</h2></div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./images/slide3.png">
+                            <div class="carousel-caption" ><h2>As maquinas mais variadas </h2></div>
+            </div>
+        </div>
+            <buttton data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+            </buttton>
+            <buttton data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+            </buttton>
+                <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0" ></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+    </div>
+    </div>
+<!-- fim do carrousel-->
+
+
+
+
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+        <h2>Mais recentes</h2>
+
+        <!--início dos cards-->
+            <div class="container">
+                <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Euro truck Simulator
+                    </div>
+                    <img src="./images/Scania.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Scania</h4>
+                        <h5 class="card-subtitle">Caminhão Scania RJL</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        American Truck Simulator
+                    </div>
+                    <img src="./images/Freightliner.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Freightliner</h4>
+                        <h5 class="card-subtitle">Caminhão Freightliner 6x4</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Farming Simulator 2022
+                    </div>
+                    <img src="./images/Massey.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Massey-Ferguson</h4>
+                        <h5 class="card-subtitle">Tratores Massey-Ferguson</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <!--fim dos cards-->
+    </section>
+        <section id="mods-jogo">
+        <h2>Mods por jogo</h2>
+        <div class="container">
+            <nav class="nav nav-tabs">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active text-dark" type="button">Euro Truck Simulator 2</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link text-dark" type="button">American Truck Simulator</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link text-dark" type="button">Farming Simulator 2022</button>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane active" id="aba1">
+                                                        <!--início dos cards-->
+            <div class="container">
+                <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Euro truck Simulator
+                    </div>
+                    <img src="./images/Scania.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Scania</h4>
+                        <h5 class="card-subtitle">Caminhão Scania RJL</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Euro truck Simulator
+                    </div>
+                    <img src="./images/DAF.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">DAF</h4>
+                        <h5 class="card-subtitle">Caminhão DAF XF</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Euro truck Simulator
+                    </div>
+                    <img src="./images/Volvo.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Volvo</h4>
+                        <h5 class="card-subtitle">Caminhão Volvo FH12</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <!--fim dos cards-->
+                </div>
+                <div class="tab-pane" id="aba2">
+                            <!--início dos cards-->
+            <div class="container">
+                <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        American Truck Simulator
+                    </div>
+                    <img src="./images/Freightliner.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Freightliner</h4>
+                        <h5 class="card-subtitle">Caminhão Freightliner 6x4</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        American Truck Simulator
+                    </div>
+                    <img src="./images/Mack.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Mack</h4>
+                        <h5 class="card-subtitle">Caminhão Mack com carreta aberta</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        American Truck Simulator
+                    </div>
+                    <img src="./images/Kenworth.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Kenworth</h4>
+                        <h5 class="card-subtitle">Caminhão Kenworth 6x2</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <!--fim dos cards-->
+                </div>
+                <div class="tab-pane" id="aba3">
+                                                        <!--início dos cards-->
+            <div class="container">
+                <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Farming Simulator 2022
+                    </div>
+                    <img src="./images/Massey.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Massey-Ferguson</h4>
+                        <h5 class="card-subtitle">Linha Massey-Ferguson</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Farming Simulator 2022
+                    </div>
+                    <img src="./images/John-Deere.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">John-Deere</h4>
+                        <h5 class="card-subtitle">Trator John-Deere clássico</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Farming Simulator 2022
+                    </div>
+                    <img src="./images/Deutz.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Deutz</h4>
+                        <h5 class="card-subtitle">Novo Trator Deutz</h5>
+                        <btn class="btn btn-primary">Download</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <!--fim dos cards-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+        <div class="container">
+            <p>
+                &copy; Milkian - Todos os Direitos reservados
+            </p>
+        </div>
+</footer>
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
